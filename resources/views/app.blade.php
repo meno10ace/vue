@@ -1,4 +1,6 @@
-<html lang="{{ str_replace('_','-',app()->getLocale()}}">
+<!doctype html>
+
+<html lang="{{str_replace('_','-',app()->getLocale())}}">
     <head>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,8 +15,8 @@
     <body>
         
         <div id="app">
-            <example-component></example-component>
-
+            <header-component></header-component>
+            <router-view></router-view>
         </div>
         <!-- script -->
          <script src="{{ mix('/js/app.js')}}" defer></script>
