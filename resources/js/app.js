@@ -45,16 +45,17 @@ const router = new VueRouter({
             component:TaskListComponent
         },
         {
+            path:'/tasks/create',
+            name:'task.create',
+            component:TaskCreateComponent,
+        },
+        {
             path:'/tasks/:taskId',
             name:'task.show',
             component:TaskShowComponent,
             props:true
         },
-        {
-            path:'/tasks/create',
-            name:'task.create',
-            component:TaskCreateComponent,
-        },
+        
         {
             path: '/tasks/:taskId/edit',
             name: 'task.edit',
