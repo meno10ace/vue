@@ -1,6 +1,6 @@
 <?php
 
-// namespace Database\Seeders;
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 // use TaskTableSeeder;
@@ -14,6 +14,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        // $this->call(TasksTableSeeder::class);
+        $this->call(TasksTableSeeder::class);
     }
 }
